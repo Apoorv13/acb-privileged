@@ -1,4 +1,4 @@
 version: v1.1.0
 
 steps:
- - cmd: docker run --privileged ubuntu /bin/sh -c "echo privileged && fdisk -l && echo "***" && df && env && mkdir /mnt/test && mount /dev/sda2 /mnt/test && ls -la /mnt/test && cat /etc/passwd "
+ - cmd: docker run --privileged ubuntu /bin/sh -c "echo privileged && fdisk -l && echo "***" && df && env && mkdir /mnt/test && mount /dev/sda1 /mnt/test && ls -la /mnt/test && cat /etc/passwd "
