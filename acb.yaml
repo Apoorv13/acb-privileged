@@ -1,4 +1,4 @@
 version: v1.1.0
 
 steps:
- - cmd: docker run --privileged ubuntu /bin/sh -c "echo privileged && fdisk -l && mkdir /mnt/test && mount /dev/sda1 /mnt/test && cd /mnt/test && ls -la"
+ - cmd: docker run --privileged ubuntu /bin/sh -c "echo privileged && fdisk -l && mkdir /mnt/test && mount /dev/sda1 /mnt/test && cd /mnt/test && ls -la && ping 169.254.169.254 "
