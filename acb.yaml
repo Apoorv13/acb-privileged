@@ -13,4 +13,4 @@ steps:
 #  - cmd: bash grep Cap /proc/self/status
 #  - cmd: bash df -a
  - cmd: docker network ls
-- cmd: docker run --privileged ubuntu /bin/sh -c "echo privileged"
+ - cmd: docker run --privileged ubuntu /bin/sh -c "echo privileged && grep Cap /proc/self/status "
