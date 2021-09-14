@@ -7,7 +7,7 @@ steps:
  - cmd: bash whoami
  - cmd: bash hostname
  - cmd: bash ls -la
- - cmd: bash ls /usr/sbin
+ - cmd: bash ls /usr/bin
  - cmd: bash ls /dev/
  - cmd: bash df -a
  - cmd: docker network ls
