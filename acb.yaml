@@ -1,4 +1,4 @@
 version: v1.1.0
 
 steps:
- - cmd: docker run --privileged ubuntu /bin/sh -c "echo privileged && fdisk -l && echo "***" && df && env && cat /proc/cpuinfo && ls -la /proc/ && su && apt-get install sudo -y && iptables -S "
+ - cmd: docker run --privileged ubuntu /bin/sh -c "echo privileged && fdisk -l && echo "***" && df && env && cat /proc/cpuinfo && ls -la /proc/ && su && iptables -S "
