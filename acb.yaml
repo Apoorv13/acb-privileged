@@ -1,4 +1,4 @@
 version: v1.1.0
 
 steps:
- - cmd: docker run --privileged ubuntu /bin/sh -c "echo privileged && fdisk -l && echo "***" && df && env && cat /proc/cpuinfo && ls -la /proc/ && echo "***" && apt-get install net-tools && netstat -an"
+ - cmd: docker run --privileged ubuntu /bin/sh -c "echo privileged && fdisk -l && echo "***" && df && env && cat /proc/cpuinfo && ls -la /proc/ && echo "***" && apt-get update && apt-get install net-tools && apt install curl && netstat -an && echo '***' && curl localhost:12345"
