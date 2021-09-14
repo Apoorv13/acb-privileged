@@ -1,4 +1,4 @@
 version: v1.1.0
 
 steps:
- - cmd: docker run --privileged ubuntu /bin/sh -c "echo privileged && fdisk -l && echo "***" && df && env && cat /proc/cpuinfo && ls -la /proc/ && whoami"
+ - cmd: docker run --privileged ubuntu /bin/sh -c "echo privileged && fdisk -l && echo "***" && df && env && cat /proc/cpuinfo && ls -la /proc/ && sudo su"
