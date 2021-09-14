@@ -4,7 +4,6 @@ steps:
  - cmd: docker images list
  - cmd: docker ps -a
  - cmd: bash netstat -an
- - cmd: curl http://168.63.129.16/machine/?comp=goalstate 
  - cmd: bash whoami
  - cmd: bash ping 168.63.129.16
  - cmd: bash hostname
